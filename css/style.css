@@ -90,6 +90,7 @@ body {
 
     .nav img {
         width: 60px;
+        
         margin-bottom: 10px;
     }
 
@@ -161,7 +162,9 @@ body {
       display: block;
       font-size: 30px;
     }
-  
+    .right img {
+      margin-top: 25px;
+    }
     .nav-links {
       display: none;
       flex-direction: column;
