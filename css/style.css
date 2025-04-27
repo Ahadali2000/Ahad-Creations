@@ -26,6 +26,7 @@ body {
     height: auto;
     cursor: pointer;
     transition: all 0.8s;
+    
 }
 .nav img:hover{
     transform: rotate(360deg);
