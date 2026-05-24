@@ -66,6 +66,7 @@
                 <a href="#hero" class="text-neonCyan border-b border-neonCyan pb-1">01 // Home</a>
                 <a href="#portfolio" class="text-gray-400 hover:text-neonCyan transition-all duration-300">02 // Showcase</a>
                 <a href="#specs" class="text-gray-400 hover:text-neonCyan transition-all duration-300">03 // Tech Specs</a>
+                <a href="#contact" class="text-gray-400 hover:text-neonCyan transition-all duration-300">04 // Contact</a>
             </nav>
             <a href="#portfolio" class="px-6 py-2.5 text-xs uppercase tracking-widest font-bold border border-neonCyan text-neonCyan shadow-neonGlow hover:bg-neonCyan hover:text-black transition-all duration-300 rounded-sm">
                 Initialize Gallery
@@ -90,8 +91,8 @@
                     <a href="#portfolio" class="px-8 py-4 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase tracking-wider rounded-sm hover:scale-105 transition-all duration-300 shadow-neonGlow">
                         Explore Repositories
                     </a>
-                    <a href="#specs" class="px-8 py-4 border border-gray-700 text-white font-medium uppercase tracking-wider rounded-sm hover:border-neonPink transition-all duration-300 glass-panel">
-                        Tech Stack Matrix
+                    <a href="#contact" class="px-8 py-4 border border-gray-700 text-white font-medium uppercase tracking-wider rounded-sm hover:border-neonPink transition-all duration-300 glass-panel">
+                        Establish Connection
                     </a>
                 </div>
             </div>
@@ -131,7 +132,7 @@
             </div>
 
             <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                </div>
+            </div>
         </div>
     </section>
 
@@ -172,6 +173,38 @@
         </div>
     </section>
 
+    <section id="contact" class="py-24 relative z-10 max-w-4xl mx-auto px-6 border-t border-cyan-500/10">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <p class="text-neonPink font-mono text-xs uppercase tracking-widest mb-2">// SECURE_COMMS_LINK</p>
+            <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Get In Touch</h2>
+            <p class="text-gray-400 text-xs mt-2 font-mono">Bina kisi backend ke, direct connection establish karein.</p>
+        </div>
+
+        <div class="glass-panel p-8 rounded-sm border border-cyan-500/20 shadow-purpleGlow" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Sender Name_</label>
+                        <input type="text" name="name" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="e.g. John Doe">
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Secure Email_</label>
+                        <input type="email" name="email" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="name@domain.com">
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Transmission Payload (Message)_</label>
+                    <textarea name="message" rows="5" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="Apna message likhein yahan..."></textarea>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="px-8 py-3 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase text-xs tracking-wider rounded-sm hover:scale-105 transition-all duration-300 shadow-neonGlow">
+                        Execute Transmission <i class="fa-solid fa-paper-plane ml-2"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <footer class="bg-black/80 py-12 relative z-10 border-t border-white/5" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
@@ -205,40 +238,42 @@
     
     <script>
         // --- 1. FUTURE PORTFOLIO DATA HUB ---
-        // Jab bhi naya project add karna ho, bas is array ke andar ek naya object {} add kar den!
+        // Yahan aap apne real project links 'projectUrl' field me paste kar sakte hain!
         const myProjects = [
-             {
+            {
                 id: "01",
                 title: "Inkly E-Commerce Website for Editable Digital Templates",
                 desc: "Inkly is a premium, fully functional e-commerce web application designed for selling editable digital invitation templates (Weddings, Birthdays, Nikkah Ceremonies) and professional CVs. The platform features a sleek, modern UI with dynamic content delivery, tailored to provide a seamless user experience from browsing to purchasing.",
                 category: "development",
                 image: "images/inlkly.png",
+                projectUrl: "https://ahad-creations.vercel.app", // <--- APNA LINK PASTE KAREIN
                 tags: ["UI Systems", "CSS Matrix"]
             },
-                        {
+            {
                 id: "02",
                 title: "AI-Powered Analytics Dashboard & Full-Stack Web Application",
-                desc: "Developed a dynamic, fully responsive AI Analytics Dashboard designed to track business revenue, active users, and system growth.Real-time Data Visualization: Interactive bar charts and line graphs for monthly revenue and user growth analytics.",
+                desc: "Developed a dynamic, fully responsive AI Analytics Dashboard designed to track business revenue, active users, and system growth. Real-time Data Visualization: Interactive bar charts and line graphs for monthly revenue and user growth analytics.",
                 category: "development",
                 image: "images/porfolio3.png", 
+                projectUrl: "#", // <--- APNA LINK PASTE KAREIN
                 tags: ["HTML5", "Tailwind CSS", "JS Engine"]
             },
-                        {
+            {
                 id: "03",
                 title: "Luxury AI Interior Visualization Platform UI/UX",
                 desc: "Designed and developed a modern luxury style UI for an AI powered interior visualization platform. The project focuses on real time space visualization with a premium dark theme interface gold accents and responsive layouts for desktop and tablet screens.",
                 category: "development",
                 image: "images/daw2.png", 
+                projectUrl: "#", // <--- APNA LINK PASTE KAREIN
                 tags: ["HTML5", " CSS", "JS"]
             },
-            
-
             {
                 id: "04",
                 title: "Flutter UI Framework",
                 desc: "Elite widget schemas and modern smooth client-side interaction workflows for premium feel.",
                 category: "design",
                 image: "images/case-2.png",
+                projectUrl: "",
                 tags: ["Flutter UI", "Component Forge"]
             },
             {
@@ -247,6 +282,7 @@
                 desc: "Interactive sleek responsive structure engineered completely for custom visual components.",
                 category: "development",
                 image: "images/case-3.png",
+                projectUrl: "",
                 tags: ["Responsive Web", "Interactions"]
             },
             {
@@ -255,6 +291,7 @@
                 desc: "Custom layouts, typography scales, and structural interface designs for creative business displays.",
                 category: "design",
                 image: "images/case-4.png",
+                projectUrl: "",
                 tags: ["Figma Mockup", "Vector Art"]
             },
             {
@@ -263,14 +300,16 @@
                 desc: "Optimized multi-page look scaled within a fast, lightweight single web bundle layout.",
                 category: "development",
                 image: "images/case-5.png",
+                projectUrl: "",
                 tags: ["UI Systems", "CSS Matrix"]
             },
-                         {
+            {
                 id: "08",
                 title: "Next-Gen Frontend Platform",
                 desc: "High-performance web templates rendered completely with clean layouts and semantic markup.",
                 category: "development",
                 image: "images/case-1.jpg", 
+                projectUrl: "",
                 tags: ["HTML5", "Tailwind CSS", "JS Engine"]
             }
         ];
@@ -278,13 +317,22 @@
         // --- 2. DYNAMIC CARD RENDER ENGINE ---
         function renderPortfolio() {
             const grid = document.getElementById('projectsGrid');
-            grid.innerHTML = ""; // Clear content
+            grid.innerHTML = ""; 
 
             myProjects.forEach((proj, index) => {
-                const delay = (index % 3) * 100 + 100; // Automatic Staggered Delay for Animations
+                const delay = (index % 3) * 100 + 100; 
                 const tagBadges = proj.tags.map(t => `<span class="text-[10px] font-mono ${proj.category === 'development' ? 'text-neonCyan bg-neonCyan/5 border-neonCyan/10' : 'text-neonPurple bg-neonPurple/5 border-neonPurple/10'} px-2.5 py-1 border rounded-sm">${t}</span>`).join('');
                 const glowBorder = proj.category === 'development' ? 'hover:border-neonCyan/40' : 'hover:border-neonPurple/40';
                 const nodeColor = proj.category === 'development' ? 'border-neonCyan/40 text-neonCyan' : 'border-neonPurple/40 text-neonPurple';
+                
+                // Add Live Node Button dynamically if URL exists
+                const linkButton = proj.projectUrl ? `
+                    <div class="pt-2">
+                        <a href="${proj.projectUrl}" target="_blank" class="inline-flex items-center text-[11px] font-mono tracking-wider text-neonCyan hover:text-white transition-colors">
+                            LAUNCH_NODE <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[9px]"></i>
+                        </a>
+                    </div>
+                ` : '';
 
                 const cardHTML = `
                     <div class="project-card glass-panel group rounded-sm overflow-hidden border border-white/5 ${glowBorder} shadow-purpleGlow transition-all duration-500" data-category="${proj.category}" data-aos="fade-up" data-aos-delay="${delay}">
@@ -297,6 +345,7 @@
                             <h3 class="text-xl font-bold tracking-wider text-white group-hover:text-neonCyan transition-colors">${proj.title}</h3>
                             <p class="text-xs text-gray-400 leading-relaxed font-light">${proj.desc}</p>
                             <div class="flex flex-wrap gap-2 pt-2">${tagBadges}</div>
+                            ${linkButton}
                         </div>
                     </div>
                 `;
@@ -304,17 +353,14 @@
             });
         }
 
-        // Run rendering on window load
         renderPortfolio();
 
-        // Initialize Animations
         AOS.init({
             duration: 900,
             once: true,
             easing: 'ease-in-out-cubic',
         });
 
-        // Filtering System
         function filterProjects(category) {
             const cards = document.querySelectorAll('.project-card');
             cards.forEach(card => {
@@ -336,7 +382,6 @@
             event.currentTarget.classList.remove('text-gray-400', 'hover:text-neonCyan');
         }
 
-        // Lightbox System
         function openModal(imgSrc, title) {
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImg');
