@@ -1,280 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="images/icon.png" type="image/png" />
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Ahad Ali | Tech Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Add GSAP via CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
-
-</head>
-<body>
-    <div class="nav">
-        <img src="images/logo.png" alt="Logo">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#sl">Portfolio</a></li>
-            <li><a href="#sk">Skill</a></li>
-            <li><a href="#cont">Contact Me</a></li>
-        </ul>
-       <a href="https://wa.me/923133379559?text=Hi%20I%20am%20interested%20to%20hire%20you!" target="_blank"> <button class="Hireme">HIRE ME!</button></a>
-        <div class="menu-icon">&#9776;</div>
-    </div>
-    <div class="banner">
-        <div class="left">
-          <h1 class="burst-effect">Hi Im <span id="">Ahad</span></h1>
-          <p class="burst-effect">I'm a web developer and designer focused on creating responsive, user-friendly websites. With expertise in HTML, CSS, JavaScript, and modern frameworks, I aim to deliver high-quality digital solutions that are both functional and visually appealing.</p>
-       </div>
-        <div class="right">
-          <img src="images/DSC04191.JPG" alt="Your image">
-        </div>
-      </div>
-      
-      <section class="portfolio-section">
-        <h2 class="section-title">Explore More</h2>
-        <div class="card-container">
-          <div class="card"><img src="images/case-1.jpg" alt="">
-          <h1>WEBSITE DESIGN</h1>
-            <a href="images/case-1.jpg"><button class="btn">EXPLORE</button></a>
-          </div>
-          <div class="card"><img src="images/case-2.png" alt="">
-            <h1>WEBSITE DESIGN</h1>
-            <a href="images/case-2.png"><button class="btn">EXPLORE</button></a>
-          </div>
-          <div class="card"><img src="images/case-3.png" alt="">
-            <h1>WEBSITE DESIGN</h1>
-            <a href="images/case-3.png"><button class="btn">EXPLORE</button></a>
-          </div>
-          <div class="card"><img src="images/case-4.png" alt="">
-          <h1>WEBSITE DESIGN</h1>
-          <a href="images/case-4.png"><button class="btn">EXPLORE</button></a>
-          </div>
-          <div class="card"><img src="images/case-5.png" alt="">
-          <h1>WEBSITE DESIGN</h1>
-          <a href="images/case-5.png"><button class="btn">EXPLORE</button></a>
-        </div>
-          <div class="card"><img src="images/case-3.png" alt="">
-          <h1>WEBSITE DESIGN</h1>
-          <a href="images/case-3.png"><button class="btn">EXPLORE</button></a>
-        </div>
-        </div>
-      </section>
-      <section class="portfolio-slideshow" id="sl">
-        <div class="slideshow">
-          <img src="images/case-1.jpg" class="slide" alt="Work 1">
-          <img src="images/case-2.png" class="slide" alt="Work 2">
-          <img src="images/case-3.png" class="slide" alt="Work 3">
-          <img src="images/case-4.png" class="slide" alt="Work 4">
-          <img src="images/case-5.png" class="slide" alt="Work 4">
-        </div>
-      </section>
-      <div class="contact-section" id="cont">
-        <form action="https://formsubmit.co/syedahadali2000@gmail.com" method="POST" class="contact-form">
-          <h2>Contact Me</h2>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      
-        <div class="contact-image">
-          <img src="images/user.png" alt="Contact Image">
-        </div>
-      </div>
-      <section class="skills-section" id="sk">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-          <div class="skill">
-            <svg class="circle" viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress" cx="50" cy="50" r="45" data-percentage="95"></circle>
-            </svg>
-            <h4>HTML</h4>
-          </div>
-          <div class="skill">
-            <svg class="circle" viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress" cx="50" cy="50" r="45" data-percentage="90"></circle>
-            </svg>
-            <h4>CSS</h4>
-          </div>
-          <div class="skill">
-            <svg class="circle" viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress" cx="50" cy="50" r="45" data-percentage="85"></circle>
-            </svg>
-            <h4>JavaScript</h4>
-          </div>
-          <div class="skill">
-            <svg class="circle" viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress" cx="50" cy="50" r="45" data-percentage="80"></circle>
-            </svg>
-            <h4>PHP</h4>
-          </div>
-          <div class="skill">
-            <svg class="circle" viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress" cx="50" cy="50" r="45" data-percentage="75"></circle>
-            </svg>
-            <h4>Laravel</h4>
-          </div>
-          <div class="skill">
-            <svg class="circle" viewBox="0 0 100 100">
-              <circle class="bg" cx="50" cy="50" r="45"></circle>
-              <circle class="progress" cx="50" cy="50" r="45" data-percentage="85"></circle>
-            </svg>
-            <h4>MySQL</h4>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-brand">
-            <h2>Abdul Ahad</h2>
-            <p>Creative Web Developer & Designer</p>
-          </div>
-      
-          <div class="footer-social">
-            <a href="https://www.facebook.com/Ahadali12345/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/abdul_ahad_photography?igsh=OHpxNmFoOHBhNDVv" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/syed-abdul-ahad-ali-9ba4261b8/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-      
-          <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="#sl">Portfolio</a>
-            <a href="#sk">Skill</a>
-            <a href="#cont">Contact</a>
-          </div>
-        </div>
-      
-        <div class="footer-bottom">
-          <p>&copy; 2025 Abdul Ahad. All rights reserved.</p>
-        </div>
-      </footer>
-      
-      
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
     <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-        // Wait for the DOM to fully load before executing
-        window.onload = function () {
-  // Function to wrap each word in a span tag
-  function wrapWords(element) {
-    const text = element.textContent;
-    const words = text.split(' '); // Split the text into words
-    element.innerHTML = ''; // Clear the original text
-
-    // Wrap each word in a <span>
-    words.forEach(word => {
-      const span = document.createElement('span');
-      span.textContent = word + ' ';  // Add a space after each word
-      element.appendChild(span);
-    });
-  }
-
-  // Select all elements with the burst-effect class
-  const elements = document.querySelectorAll('.burst-effect');
-  
-  // Wrap each word with a span tag
-  elements.forEach(wrapWords);
-
-  // Animate each word with GSAP
-  gsap.from(".burst-effect span", {
-    duration: 1,  // Speed up by decreasing the duration
-    opacity: 0,
-    scale: 0.5,
-    rotate: 180,
-    x: -50,
-    stagger: 0.1,  // Delay between words, adjust for timing
-    ease: "back.out(1.7)", // Smooth easing
-  });
-};
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.utils.toArray(".card").forEach((card, i) => {
-    gsap.fromTo(card,
-      { y: 50, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        delay: i * 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: card,
-          start: "top 90%",
-          toggleActions: "play none none none"
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyberDark: '#0a0a12',
+                        cyberCard: 'rgba(20, 20, 35, 0.6)',
+                        neonCyan: '#00f2fe',
+                        neonPurple: '#4facfe',
+                    },
+                    boxShadow: {
+                        neonGlow: '0 0 15px rgba(0, 242, 254, 0.4)',
+                        neonCard: '0 8px 32px 0 rgba(0, 242, 254, 0.1)',
+                    }
+                }
+            }
         }
-      });
-  });
-  const slides = document.querySelectorAll('.slide');
-  let index = 0;
+    </script>
+    <style>
+        .glass-effect {
+            background: var(--cyberCard);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-cyberDark text-gray-200 font-sans antialiased selection:bg-neonCyan selection:text-black overflow-x-hidden">
 
-  function showSlide() {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-    });
-    slides[index].classList.add('active');
-    index = (index + 1) % slides.length;
-  }
+    <!-- Background Grid Effect -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
 
-  showSlide(); // show first
-  setInterval(showSlide, 2000); // every 3 seconds
-  const progressCircles = document.querySelectorAll(".progress");
-  const skills = document.querySelectorAll(".skill");
-  const skillsSection = document.querySelector(".skills-section");
-  let animated = false;
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-effect border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-wider text-gradient">AHAD.ALI<span class="text-neonCyan">_</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
+                <a href="#hero" class="hover:text-neonCyan transition-colors duration-300">Home</a>
+                <a href="#portfolio" class="hover:text-neonCyan transition-colors duration-300">Projects</a>
+                <a href="#about" class="hover:text-neonCyan transition-colors duration-300">Capabilities</a>
+            </nav>
+            <a href="#portfolio" class="px-5 py-2 text-xs uppercase tracking-widest font-bold border border-neonCyan text-neonCyan shadow-neonGlow hover:bg-neonCyan hover:text-black transition-all duration-300 rounded-sm">
+                View Works
+            </a>
+        </div>
+    </header>
 
-  function animateSkills() {
-    progressCircles.forEach(circle => {
-      const percentage = circle.dataset.percentage;
-      const radius = circle.r.baseVal.value;
-      const circumference = 2 * Math.PI * radius;
-      const offset = circumference - (percentage / 100) * circumference;
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 z-10">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <div class="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6 glass-effect">
+                <span class="w-2 h-2 inline-block bg-neonCyan rounded-full mr-2 animate-pulse"></span> Available for Elite Projects
+            </div>
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase">
+                Digital <span class="text-gradient">Architect</span> <br> & Developer
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Crafting cutting-edge visual experiences and robust digital solutions. Welcome to the future of interface design.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase tracking-wider rounded-sm hover:opacity-90 transition-all duration-300 shadow-neonGlow">
+                    Explore Gallery
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 glass-effect border border-gray-700 text-white font-medium uppercase tracking-wider rounded-sm hover:border-neonCyan transition-all duration-300">
+                    Core Tech Stack
+                </a>
+            </div>
+        </div>
+        <!-- Bottom Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <a href="#portfolio" class="text-gray-500 hover:text-neonCyan"><i class="fa-solid fa-arrow-down text-xl"></i></a>
+        </div>
+    </section>
 
-      circle.style.strokeDasharray = `${circumference}`;
-      circle.style.strokeDashoffset = offset;
-    });
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="py-24 relative z-10 bg-black/30">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <p class="text-neonCyan text-xs uppercase tracking-widest font-bold mb-2">// Showcase</p>
+                    <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">Project Archive</h2>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0 glass-effect p-1.5 rounded-sm border border-gray-800">
+                    <button onclick="filterProjects('all')" class="filter-btn px-4 py-2 text-xs uppercase tracking-wider font-bold rounded-sm bg-neonCyan text-black transition-all">All</button>
+                    <button onclick="filterProjects('development')" class="filter-btn px-4 py-2 text-xs uppercase tracking-wider font-bold rounded-sm hover:text-neonCyan transition-all">Dev Solutions</button>
+                    <button onclick="filterProjects('design')" class="filter-btn px-4 py-2 text-xs uppercase tracking-wider font-bold rounded-sm hover:text-neonCyan transition-all">UI / Graphic</button>
+                </div>
+            </div>
 
-    // Animate each skill card
-    skills.forEach((skill, i) => {
-      skill.style.opacity = "1";
-      skill.style.transform = "translateY(0)";
-      skill.style.transition = `all 0.6s ease ${i * 0.2}s`;
-    });
-  }
+            <!-- Grid of PNG Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 (Development) -->
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80', 'Next-Gen Dashboard')">
+                        <!-- Yahan aap apni PNG ka path daalenge (e.g., assets/my-project.png) -->
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
+                        <div class="absolute top-4 right-4 bg-black/70 border border-neonCyan/30 text-neonCyan text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
+                            Live System
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold tracking-tight text-white mb-2 group-hover:text-neonCyan transition-colors">Enterprise Analytics Engine</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">High-performance full-stack web ecosystem integrated with advanced modern tools.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Laravel</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Vue.js</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
 
-  function isInView(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.top <= window.innerHeight - 100 && rect.bottom >= 0;
-  }
+                <!-- Card 2 (Design) -->
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="design">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80', 'Futuristic UI Mockup')">
+                        <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
+                        <div class="absolute top-4 right-4 bg-black/70 border border-neonPurple/30 text-neonPurple text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
+                            UI/UX Layout
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold tracking-tight text-white mb-2 group-hover:text-neonCyan transition-colors">Neo-Brutalism Interface</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">Immersive desktop interface experience tailored for creative digital platforms.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Figma</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">UI/UX Layout</span>
+                        </div>
+                    </div>
+                </div>
 
-  window.addEventListener("scroll", () => {
-    if (!animated && isInView(skillsSection)) {
-      animateSkills();
-      animated = true;
-    }
-  });
+                <!-- Card 3 (Development) -->
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80', 'Mobile Interface App')">
+                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
+                        <div class="absolute top-4 right-4 bg-black/70 border border-neonCyan/30 text-neonCyan text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
+                            Mobile App
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold tracking-tight text-white mb-2 group-hover:text-neonCyan transition-colors">Cross-Platform Application</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">High performance native experiences deployment optimized for fast delivery solutions.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Flutter</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">API Core</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities / Tech Stack Section -->
+    <section id="about" class="py-24 relative z-10 max-w-7xl mx-auto px-6 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <p class="text-neonCyan text-xs uppercase tracking-widest font-bold mb-2">// Matrix</p>
+            <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">Technical Stack & Skills</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+                <i class="fa-solid fa-code text-3xl text-neonCyan mb-4"></i>
+                <h4 class="font-bold text-white tracking-wide uppercase text-sm">Full-Stack Dev</h4>
+                <p class="text-xs text-gray-500 mt-1">PHP / Laravel / Node</p>
+            </div>
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+                <i class="fa-solid fa-mobile-screen-button text-3xl text-neonPurple mb-4"></i>
+                <h4 class="font-bold text-white tracking-wide uppercase text-sm">Mobile Architecture</h4>
+                <p class="text-xs text-gray-500 mt-1">Flutter Ecosystem</p>
+            </div>
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+                <i class="fa-solid fa-bezier-curve text-3xl text-neonCyan mb-4"></i>
+                <h4 class="font-bold text-white tracking-wide uppercase text-sm">UI/UX Engineering</h4>
+                <p class="text-xs text-gray-500 mt-1">Figma / Modern Mockups</p>
+            </div>
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+                <i class="fa-solid fa-database text-3xl text-neonPurple mb-4"></i>
+                <h4 class="font-bold text-white tracking-wide uppercase text-sm">Data Structures</h4>
+                <p class="text-xs text-gray-500 mt-1">Relational SQL Management</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Terminal Style Contact End -->
+    <footer class="bg-black/80 py-12 relative z-10 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="text-sm font-mono text-gray-500">&copy; 2026 AHAD_ALI. All rights reserved. Powered by futuristic vibes.</p>
+            </div>
+            <!-- Social Icons -->
+            <div class="flex space-x-6 text-xl">
+                <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-brands fa-behance"></i></a>
+                <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-solid fa-briefcase"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Futuristic Image Lightbox Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-cyberDark/95 hidden backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-neonCyan text-3xl transition-colors focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-5xl w-full flex flex-col items-center">
+            <div class="relative border border-gray-800 rounded-sm overflow-hidden bg-black shadow-neonGlow max-h-[80vh]">
+                <img id="modalImg" src="" alt="Enlarged View" class="w-full h-auto max-h-[75vh] object-contain block mx-auto">
+            </div>
+            <h4 id="modalTitle" class="text-xl font-bold tracking-wide uppercase text-neonCyan mt-4 text-center">Project Title</h4>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Project Filtering Logic
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => card.style.opacity = '1', 50);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.display = 'none', 300);
+                }
+            });
+
+            // Update Active Tab Style
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-neonCyan', 'text-black');
+                btn.classList.add('hover:text-neonCyan');
+            });
+            event.currentTarget.classList.add('bg-neonCyan', 'text-black');
+            event.currentTarget.classList.remove('hover:text-neonCyan');
+        }
+
+        // Lightbox Modal Logic
+        function openModal(imgSrc, title) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalTitle = document.getElementById('modalTitle');
+
+            modalImg.src = imgSrc;
+            modalTitle.innerText = title;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.remove('flex');
+                modal.xlclass = modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Close modal on pressing ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
     </script>
 </body>
 </html>
