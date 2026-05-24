@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahad Ali | Tech Portfolio</title>
-    <!-- Tailwind CSS CDN -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -38,15 +41,18 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a12; }
+        ::-webkit-scrollbar-thumb { background: #00f2fe; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4facfe; }
     </style>
 </head>
 <body class="bg-cyberDark text-gray-200 font-sans antialiased selection:bg-neonCyan selection:text-black overflow-x-hidden">
 
-    <!-- Background Grid Effect -->
     <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
 
-    <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 w-full z-50 glass-effect border-b border-gray-800">
+    <header class="fixed top-0 left-0 w-full z-50 glass-effect border-b border-gray-800" data-aos="fade-down" data-aos-duration="1000">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-black tracking-wider text-gradient">AHAD.ALI<span class="text-neonCyan">_</span></a>
             <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase">
@@ -60,19 +66,18 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 z-10">
         <div class="max-w-4xl mx-auto text-center px-6">
-            <div class="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6 glass-effect">
+            <div class="inline-block px-4 py-1 border border-gray-800 rounded-full text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6 glass-effect" data-aos="fade-up" data-aos-delay="200">
                 <span class="w-2 h-2 inline-block bg-neonCyan rounded-full mr-2 animate-pulse"></span> Available for Elite Projects
             </div>
-            <h1 class="text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase">
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter mb-6 uppercase" data-aos="fade-up" data-aos-delay="400">
                 Digital <span class="text-gradient">Architect</span> <br> & Developer
             </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="600">
                 Crafting cutting-edge visual experiences and robust digital solutions. Welcome to the future of interface design.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4" data-aos="fade-up" data-aos-delay="800">
                 <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase tracking-wider rounded-sm hover:opacity-90 transition-all duration-300 shadow-neonGlow">
                     Explore Gallery
                 </a>
@@ -81,22 +86,19 @@
                 </a>
             </div>
         </div>
-        <!-- Bottom Scroll Indicator -->
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
             <a href="#portfolio" class="text-gray-500 hover:text-neonCyan"><i class="fa-solid fa-arrow-down text-xl"></i></a>
         </div>
     </section>
 
-    <!-- Portfolio Gallery Section -->
     <section id="portfolio" class="py-24 relative z-10 bg-black/30">
         <div class="max-w-7xl mx-auto px-6">
             
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16" data-aos="fade-right">
                 <div>
                     <p class="text-neonCyan text-xs uppercase tracking-widest font-bold mb-2">// Showcase</p>
                     <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">Project Archive</h2>
                 </div>
-                <!-- Filter Tabs -->
                 <div class="flex flex-wrap gap-2 mt-6 md:mt-0 glass-effect p-1.5 rounded-sm border border-gray-800">
                     <button onclick="filterProjects('all')" class="filter-btn px-4 py-2 text-xs uppercase tracking-wider font-bold rounded-sm bg-neonCyan text-black transition-all">All</button>
                     <button onclick="filterProjects('development')" class="filter-btn px-4 py-2 text-xs uppercase tracking-wider font-bold rounded-sm hover:text-neonCyan transition-all">Dev Solutions</button>
@@ -104,14 +106,11 @@
                 </div>
             </div>
 
-            <!-- Grid of PNG Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Card 1 (Development) -->
-                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development">
-                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80', 'Next-Gen Dashboard')">
-                        <!-- Yahan aap apni PNG ka path daalenge (e.g., assets/my-project.png) -->
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('images/case-1.png', 'Next-Gen Dashboard')">
+                        <img src="images/case-1.png" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
                         <div class="absolute top-4 right-4 bg-black/70 border border-neonCyan/30 text-neonCyan text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
                             Live System
@@ -123,15 +122,13 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Laravel</span>
                             <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Vue.js</span>
-                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">SQL Server</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2 (Design) -->
-                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="design">
-                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80', 'Futuristic UI Mockup')">
-                        <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="design" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('images/case-2.png', 'Futuristic UI Mockup')">
+                        <img src="images/case-2.png" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
                         <div class="absolute top-4 right-4 bg-black/70 border border-neonPurple/30 text-neonPurple text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
                             UI/UX Layout
@@ -142,15 +139,14 @@
                         <p class="text-sm text-gray-400 mb-4 line-clamp-2">Immersive desktop interface experience tailored for creative digital platforms.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Figma</span>
-                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">UI/UX Layout</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Interaction</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3 (Development) -->
-                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development">
-                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80', 'Mobile Interface App')">
-                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('images/case-3.png', 'Mobile Interface App')">
+                        <img src="images/case-3.png" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
                         <div class="absolute top-4 right-4 bg-black/70 border border-neonCyan/30 text-neonCyan text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
                             Mobile App
@@ -166,33 +162,68 @@
                     </div>
                 </div>
 
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="design" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('images/case-4.png', 'Visual Identity System')">
+                        <img src="images/case-4.png" alt="Project 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
+                        <div class="absolute top-4 right-4 bg-black/70 border border-neonPurple/30 text-neonPurple text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
+                            Brand System
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold tracking-tight text-white mb-2 group-hover:text-neonCyan transition-colors">Cyberpunk Brand Guide</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">Complete visual language and component system for digital ecosystems.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Motion</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Colors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect group rounded-sm overflow-hidden border border-gray-800 shadow-neonCard hover:border-neonCyan/50 transition-all duration-500" data-category="development" data-aos="fade-up" data-aos-delay="500">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-gray-900 cursor-pointer" onclick="openModal('images/case-5.png', 'E-Commerce Platform')">
+                        <img src="images/case-5.png" alt="Project 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent opacity-90"></div>
+                        <div class="absolute top-4 right-4 bg-black/70 border border-neonCyan/30 text-neonCyan text-[10px] uppercase tracking-widest font-bold px-2.5 py-1 rounded-sm">
+                            Live Store
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold tracking-tight text-white mb-2 group-hover:text-neonCyan transition-colors">Modern Retail Dashboard</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">Full e-commerce infrastructure optimized for extreme scaling and performance.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">React</span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-white/5 px-2.5 py-1 rounded-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Capabilities / Tech Stack Section -->
     <section id="about" class="py-24 relative z-10 max-w-7xl mx-auto px-6 border-t border-gray-900">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16" data-aos="fade-up">
             <p class="text-neonCyan text-xs uppercase tracking-widest font-bold mb-2">// Matrix</p>
             <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">Technical Stack & Skills</h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
                 <i class="fa-solid fa-code text-3xl text-neonCyan mb-4"></i>
                 <h4 class="font-bold text-white tracking-wide uppercase text-sm">Full-Stack Dev</h4>
                 <p class="text-xs text-gray-500 mt-1">PHP / Laravel / Node</p>
             </div>
-            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fa-solid fa-mobile-screen-button text-3xl text-neonPurple mb-4"></i>
                 <h4 class="font-bold text-white tracking-wide uppercase text-sm">Mobile Architecture</h4>
                 <p class="text-xs text-gray-500 mt-1">Flutter Ecosystem</p>
             </div>
-            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
                 <i class="fa-solid fa-bezier-curve text-3xl text-neonCyan mb-4"></i>
                 <h4 class="font-bold text-white tracking-wide uppercase text-sm">UI/UX Engineering</h4>
                 <p class="text-xs text-gray-500 mt-1">Figma / Modern Mockups</p>
             </div>
-            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300">
+            <div class="glass-effect p-6 rounded-sm text-center border border-gray-800 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="400">
                 <i class="fa-solid fa-database text-3xl text-neonPurple mb-4"></i>
                 <h4 class="font-bold text-white tracking-wide uppercase text-sm">Data Structures</h4>
                 <p class="text-xs text-gray-500 mt-1">Relational SQL Management</p>
@@ -200,23 +231,18 @@
         </div>
     </section>
 
-    <!-- Footer / Terminal Style Contact End -->
-    <footer class="bg-black/80 py-12 relative z-10 border-t border-gray-900">
+    <footer class="bg-black/80 py-12 relative z-10 border-t border-gray-900" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
-                <p class="text-sm font-mono text-gray-500">&copy; 2026 AHAD_ALI. All rights reserved. Powered by futuristic vibes.</p>
+                <p class="text-sm font-mono text-gray-500">&copy; 2026 AHAD_ALI. All rights reserved.</p>
             </div>
-            <!-- Social Icons -->
             <div class="flex space-x-6 text-xl">
                 <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-brands fa-github"></i></a>
                 <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-brands fa-behance"></i></a>
-                <a href="#" class="text-gray-400 hover:text-neonCyan transition-colors"><i class="fa-solid fa-briefcase"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Futuristic Image Lightbox Modal -->
     <div id="imageModal" class="fixed inset-0 z-50 bg-cyberDark/95 hidden backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
         <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-neonCyan text-3xl transition-colors focus:outline-none">
             <i class="fa-solid fa-xmark"></i>
@@ -229,8 +255,16 @@
         </div>
     </div>
 
-    <!-- JavaScript for Interactivity -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
+        // Initialize AOS Animations
+        AOS.init({
+            duration: 800, // global animation speed
+            once: true,    // whether animation should happen only once - while scrolling down
+            easing: 'ease-out-back', // default easing for AOS animations
+        });
+
         // Project Filtering Logic
         function filterProjects(category) {
             const cards = document.querySelectorAll('.project-card');
@@ -277,7 +311,7 @@
             modal.classList.add('opacity-0');
             setTimeout(() => {
                 modal.classList.remove('flex');
-                modal.xlclass = modal.classList.add('hidden');
+                modal.classList.add('hidden');
             }, 300);
         }
 
