@@ -245,7 +245,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script>
-          --- 1. FUTURE PORTFOLIO DATA HUB ---
           Yahan aap apne real project links 'projectUrl' field me paste kar sakte hain!
         const myProjects = [
             {
@@ -331,7 +330,6 @@
             }
         ];
 
-          --- 2. DYNAMIC CARD RENDER ENGINE ---
         function renderPortfolio() {
             const grid = document.getElementById('projectsGrid');
             grid.innerHTML = ""; 
@@ -343,13 +341,13 @@
                 const nodeColor = proj.category === 'development' ? 'border-neonCyan/40 text-neonCyan' : 'border-neonPurple/40 text-neonPurple';
                 
                   Add Live Node Button dynamically if URL exists
-                const linkButton = proj.projectUrl ? `
+                const linkButton = proj.projectUrl//? `
                     <div class="pt-2">
                         <a href="${proj.projectUrl}" target="_blank" class="inline-flex items-center text-[11px] font-mono tracking-wider text-neonCyan hover:text-white transition-colors">
                             LAUNCH_NODE <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[9px]"></i>
                         </a>
                     </div>
-                ` : '';
+                `//: '';
 
                 const cardHTML = `
                     <div class="project-card glass-panel group rounded-sm overflow-hidden border border-white/5 ${glowBorder} shadow-purpleGlow transition-all duration-500" data-category="${proj.category}" data-aos="fade-up" data-aos-delay="${delay}">
