@@ -1,431 +1,433 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahad Ali | Frontend & Flutter Developer</title>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahad Ali | Frontend & Flutter Developer</title>
+
 
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2026/07/02/04/20260702044944-28CZF1TC.js" defer></script>
+<script src="https://files.bpcontent.cloud/2026/06/30/03/20260630030126-BSVW54MQ.js" defer></script>
     
 
-    
-    
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cyberDark: '#07070d',
-                        cyberMatrix: '#0e0e1e',
-                        neonCyan: '#00f2fe',
-                        neonPurple: '#4facfe',
-                        neonPink: '#f35588'
-                    },
-                    boxShadow: {
-                        neonGlow: '0 0 20px rgba(0, 242, 254, 0.5)',
-                        purpleGlow: '0 0 20px rgba(79, 172, 254, 0.3)',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .glass-panel {
-            background: rgba(14, 14, 30, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(0, 242, 254, 0.15);
-        }
-        .text-gradient {
-            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #f35588 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #07070d; }
-        ::-webkit-scrollbar-thumb { background: linear-gradient(#00f2fe, #f35588); border-radius: 4px; }
-        
-        .glow-line {
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #00f2fe, transparent);
-        }
-    </style>
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+cyberDark: '#07070d',
+cyberMatrix: '#0e0e1e',
+neonCyan: '#00f2fe',
+neonPurple: '#4facfe',
+neonPink: '#f35588'
+},
+boxShadow: {
+neonGlow: '0 0 20px rgba(0, 242, 254, 0.5)',
+purpleGlow: '0 0 20px rgba(79, 172, 254, 0.3)',
+}
+}
+}
+}
+</script>
+<style>
+.glass-panel {
+background: rgba(14, 14, 30, 0.7);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+border: 1px solid rgba(0, 242, 254, 0.15);
+}
+.text-gradient {
+background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #f35588 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #07070d; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#00f2fe, #f35588); border-radius: 4px; }
+
+.glow-line {
+height: 1px;
+background: linear-gradient(90deg, transparent, #00f2fe, transparent);
+}
+</style>
 </head>
 <body class="bg-cyberDark text-gray-200 font-sans antialiased selection:bg-neonCyan selection:text-black overflow-x-hidden">
 
-    <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f293708_1px,transparent_1px),linear-gradient(to_bottom,#1f293708_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none z-0"></div>
-    <div class="fixed top-[-10%] left-[-10%] w-[50rem] h-[50rem] bg-neonCyan/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
-    <div class="fixed bottom-[-10%] right-[-10%] w-[50rem] h-[50rem] bg-neonPink/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+<div class="fixed inset-0 bg-[linear-gradient(to_right,#1f293708_1px,transparent_1px),linear-gradient(to_bottom,#1f293708_1px,transparent_1px)] bg-[size:3rem_3rem] pointer-events-none z-0"></div>
+<div class="fixed top-[-10%] left-[-10%] w-[50rem] h-[50rem] bg-neonCyan/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
+<div class="fixed bottom-[-10%] right-[-10%] w-[50rem] h-[50rem] bg-neonPink/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
-    <header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-cyan-500/10" data-aos="fade-down" data-aos-duration="1000">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black tracking-widest text-gradient">AHAD_ALI<span class="animate-pulse text-neonCyan">.EXE</span></a>
-            <nav class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase">
-                <a href="#hero" class="text-neonCyan border-b border-neonCyan pb-1">Home</a>
-                <a href="#portfolio" class="text-gray-400 hover:text-neonCyan transition-all duration-300">Showcase</a>
-                <a href="#specs" class="text-gray-400 hover:text-neonCyan transition-all duration-300">Tech Specs</a>
-                <a href="#contact" class="text-gray-400 hover:text-neonCyan transition-all duration-300">Contact</a>
-            </nav>
-            <a href="#portfolio" class="px-6 py-2.5 text-xs uppercase tracking-widest font-bold border border-neonCyan text-neonCyan shadow-neonGlow hover:bg-neonCyan hover:text-black transition-all duration-300 rounded-sm">
-                Initialize Gallery
-            </a>
-        </div>
-    </header>
+<header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-cyan-500/10" data-aos="fade-down" data-aos-duration="1000">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="text-2xl font-black tracking-widest text-gradient">AHAD_ALI<span class="animate-pulse text-neonCyan">.EXE</span></a>
+<nav class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase">
+<a href="#hero" class="text-neonCyan border-b border-neonCyan pb-1">01 // Home</a>
+<a href="#portfolio" class="text-gray-400 hover:text-neonCyan transition-all duration-300">02 // Showcase</a>
+<a href="#specs" class="text-gray-400 hover:text-neonCyan transition-all duration-300">03 // Tech Specs</a>
+<a href="#contact" class="text-gray-400 hover:text-neonCyan transition-all duration-300">04 // Contact</a>
+</nav>
+<a href="#portfolio" class="px-6 py-2.5 text-xs uppercase tracking-widest font-bold border border-neonCyan text-neonCyan shadow-neonGlow hover:bg-neonCyan hover:text-black transition-all duration-300 rounded-sm">
+Initialize Gallery
+</a>
+</div>
+</header>
 
-    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 z-10">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 px-6 items-center">
-            
-            <div class="lg:col-span-7 text-left space-y-6">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 border border-neonCyan/30 rounded-sm text-xs font-mono tracking-widest text-neonCyan glass-panel" data-aos="fade-right">
-                    <span class="w-2 h-2 bg-neonCyan rounded-full animate-ping"></span> VISUAL INTERACTION ENGINE
-                </div>
-                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter uppercase leading-none" data-aos="fade-right" data-aos-delay="200">
-                    CRAFTING <br><span class="text-gradient">FUTURISTIC</span> <br>USER INTERFACES
-                </h1>
-                <p class="text-gray-400 text-base md:text-lg max-w-xl leading-relaxed font-light" data-aos="fade-right" data-aos-delay="400">
-                    Creative Frontend Developer and Flutter UI Specialist. Heavy backend systems premium, interactive and complete single-page digital experiences deploy karna mera asset hai.
-                </p>
-                <div class="flex flex-wrap gap-4 pt-4" data-aos="fade-right" data-aos-delay="600">
-                    <a href="#portfolio" class="px-8 py-4 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase tracking-wider rounded-sm hover:scale-105 transition-all duration-300 shadow-neonGlow">
-                        Explore Repositories
-                    </a>
-                    <a href="#contact" class="px-8 py-4 border border-gray-700 text-white font-medium uppercase tracking-wider rounded-sm hover:border-neonPink transition-all duration-300 glass-panel">
-                        Establish Connection
-                    </a>
-                </div>
-            </div>
+<section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 z-10">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 px-6 items-center">
 
-            <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="300">
-                <div class="absolute -inset-1.5 bg-gradient-to-r from-neonCyan to-neonPink rounded-sm blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                <div class="relative glass-panel p-2 rounded-sm border border-cyan-500/30 overflow-hidden aspect-[4/5] shadow-purpleGlow">
-                    <img src="images/DSC04191.JPG.png" alt="Ahad Ali" class="w-full h-full object-cover grayscale contrast-125 opacity-90 hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute bottom-4 left-4 right-4 glass-panel p-3 border border-white/10 rounded-sm">
-                        <p class="text-[10px] font-mono text-neonCyan"> INTERFACE_DESIGNER</p>
-                        <h4 class="text-sm font-bold uppercase tracking-wider text-white">Ahad Ali — Frontend Architect</h4>
-                    </div>
-                </div>
-            </div>
+<div class="lg:col-span-7 text-left space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 border border-neonCyan/30 rounded-sm text-xs font-mono tracking-widest text-neonCyan glass-panel" data-aos="fade-right">
+<span class="w-2 h-2 bg-neonCyan rounded-full animate-ping"></span> VISUAL INTERACTION ENGINE
+</div>
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter uppercase leading-none" data-aos="fade-right" data-aos-delay="200">
+CRAFTING <br><span class="text-gradient">FUTURISTIC</span> <br>USER INTERFACES
+</h1>
+<p class="text-gray-400 text-base md:text-lg max-w-xl leading-relaxed font-light" data-aos="fade-right" data-aos-delay="400">
+Creative Frontend Developer aur Flutter UI Specialist. Heavy backend systems ke fikar ke bina premium, interactive aur complete single-page digital experiences deploy karna mera asset hai.
+</p>
+<div class="flex flex-wrap gap-4 pt-4" data-aos="fade-right" data-aos-delay="600">
+<a href="#portfolio" class="px-8 py-4 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase tracking-wider rounded-sm hover:scale-105 transition-all duration-300 shadow-neonGlow">
+Explore Repositories
+</a>
+<a href="#contact" class="px-8 py-4 border border-gray-700 text-white font-medium uppercase tracking-wider rounded-sm hover:border-neonPink transition-all duration-300 glass-panel">
+Establish Connection
+</a>
+</div>
+</div>
 
-        </div>
-    </section>
+<div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="300">
+<div class="absolute -inset-1.5 bg-gradient-to-r from-neonCyan to-neonPink rounded-sm blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+<div class="relative glass-panel p-2 rounded-sm border border-cyan-500/30 overflow-hidden aspect-[4/5] shadow-purpleGlow">
+<img src="images/DSC04191.JPG.png" alt="Ahad Ali" class="w-full h-full object-cover grayscale contrast-125 opacity-90 hover:grayscale-0 transition-all duration-700">
+<div class="absolute bottom-4 left-4 right-4 glass-panel p-3 border border-white/10 rounded-sm">
+<p class="text-[10px] font-mono text-neonCyan">// INTERFACE_DESIGNER</p>
+<h4 class="text-sm font-bold uppercase tracking-wider text-white">Ahad Ali — Frontend Architect</h4>
+</div>
+</div>
+</div>
 
-    <div class="glow-line"></div>
+</div>
+</section>
 
-    <section id="portfolio" class="py-28 relative z-10 bg-black/40">
-        <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-20" data-aos="fade-up">
-                <div>
-                    <div class="flex items-center gap-2 text-neonPink font-mono text-xs uppercase tracking-widest mb-3">
-                        <span>[ PROJECT_VAULT ]</span>
-                    </div>
-                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight">Project Showcases</h2>
-                </div>
-                
-                <div class="flex flex-wrap gap-2 mt-6 lg:mt-0 glass-panel p-1.5 rounded-sm border border-white/5">
-                    <button onclick="filterProjects('all')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-widest font-bold rounded-sm bg-neonCyan text-black transition-all duration-300">All Nodes</button>
-                    <button onclick="filterProjects('development')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-widest font-bold rounded-sm text-gray-400 hover:text-neonCyan transition-all duration-300">Web Frontend</button>
-                    <button onclick="filterProjects('design')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-widest font-bold rounded-sm text-gray-400 hover:text-neonCyan transition-all duration-300">Flutter & Graphics</button>
-                </div>
-            </div>
+<div class="glow-line"></div>
 
-            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            </div>
-        </div>
-    </section>
+<section id="portfolio" class="py-28 relative z-10 bg-black/40">
+<div class="max-w-7xl mx-auto px-6">
 
-    <section id="specs" class="py-24 relative z-10 max-w-7xl mx-auto px-6 border-t border-cyan-500/10">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <p class="text-neonCyan font-mono text-xs uppercase tracking-widest mb-2">  POWER MATRIX</p>
-            <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">Technical Specifications</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
-                <div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonCyan/5 border border-neonCyan/20 rounded-full mb-6">
-                    <i class="fa-solid fa-code text-2xl text-neonCyan"></i>
-                </div>
-                <h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">Web Frontend</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Responsive architectures web templates tailored with optimized performance loops.</p>
-            </div>
-            <div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonPurple/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
-                <div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonPurple/5 border border-neonPurple/20 rounded-full mb-6">
-                    <i class="fa-solid fa-mobile-screen-button text-2xl text-neonPurple"></i>
-                </div>
-                <h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">Flutter UI/UX</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Elite custom widgets and interactive components for modern mobile applications.</p>
-            </div>
-            <div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
-                <div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonCyan/5 border border-neonCyan/20 rounded-full mb-6">
-                    <i class="fa-solid fa-bezier-curve text-2xl text-neonCyan"></i>
-                </div>
-                <h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">UI Mockups</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">Figma prototyping, high-end vector branding, and luxury interface concepts.</p>
-            </div>
-            <div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonPink/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="400">
-                <div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonPink/5 border border-neonPink/20 rounded-full mb-6">
-                    <i class="fa-solid fa-database text-2xl text-neonPink"></i>
-                </div>
-                <h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">Relational Logic</h4>
-                <p class="text-xs text-gray-500 leading-relaxed">SQL structural setup for handling systematic data storage on client side.</p>
-            </div>
-        </div>
-    </section>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-20" data-aos="fade-up">
+<div>
+<div class="flex items-center gap-2 text-neonPink font-mono text-xs uppercase tracking-widest mb-3">
+<span>[ PROJECT_VAULT ]</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight">Project Showcases</h2>
+</div>
 
-    <section id="contact" class="py-24 relative z-10 max-w-4xl mx-auto px-6 border-t border-cyan-500/10">
-        <div class="text-center mb-12" data-aos="fade-up">
-            <p class="text-neonPink font-mono text-xs uppercase tracking-widest mb-2">  SECURE_COMMS_LINK</p>
-            <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Get In Touch</h2>
-            <p class="text-gray-400 text-xs mt-2 font-mono">Bina kisi backend ke, direct connection establish karein.</p>
-        </div>
+<div class="flex flex-wrap gap-2 mt-6 lg:mt-0 glass-panel p-1.5 rounded-sm border border-white/5">
+<button onclick="filterProjects('all')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-widest font-bold rounded-sm bg-neonCyan text-black transition-all duration-300">All Nodes</button>
+<button onclick="filterProjects('development')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-widest font-bold rounded-sm text-gray-400 hover:text-neonCyan transition-all duration-300">Web Frontend</button>
+<button onclick="filterProjects('design')" class="filter-btn px-5 py-2.5 text-xs uppercase tracking-widest font-bold rounded-sm text-gray-400 hover:text-neonCyan transition-all duration-300">Flutter & Graphics</button>
+</div>
+</div>
 
-        <div class="glass-panel p-8 rounded-sm border border-cyan-500/20 shadow-purpleGlow" data-aos="fade-up" data-aos-delay="200">
-            <form action="https://formspree.io/maqkbrez" method="POST" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="flex flex-col space-y-2">
-                        <label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Sender Name_</label>
-                        <input type="text" name="name" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="e.g. John Doe">
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                        <label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Secure Email_</label>
-                        <input type="email" name="email" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="name@domain.com">
-                    </div>
-                </div>
-                <div class="flex flex-col space-y-2">
-                    <label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Transmission Payload (Message)_</label>
-                    <textarea name="message" rows="5" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="Type Your Message Here..."></textarea>
-                </div>
-                <div class="text-right">
-                    <button type="submit" class="px-8 py-3 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase text-xs tracking-wider rounded-sm hover:scale-105 transition-all duration-300 shadow-neonGlow">
-                        Execute Transmission <i class="fa-solid fa-paper-plane ml-2"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
+<div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+</div>
+</div>
+</section>
 
-    <footer class="bg-black/80 py-12 relative z-10 border-t border-white/5" data-aos="fade-up">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-                <p class="text-xs font-mono text-gray-500">&copy; 2026 AHAD_ALI. CREATIVE MATRIX NODE.</p>
-            </div>
-            <div class="flex space-x-6 text-lg">
-                <a href="#" class="text-gray-500 hover:text-neonCyan transition-all"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="text-gray-500 hover:text-neonCyan transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="text-gray-500 hover:text-neonPink transition-all"><i class="fa-brands fa-behance"></i></a>
-            </div>
-        </div>
-    </footer>
+<section id="specs" class="py-24 relative z-10 max-w-7xl mx-auto px-6 border-t border-cyan-500/10">
+<div class="text-center mb-16" data-aos="fade-up">
+<p class="text-neonCyan font-mono text-xs uppercase tracking-widest mb-2">// POWER MATRIX</p>
+<h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">Technical Specifications</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+<div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonCyan/5 border border-neonCyan/20 rounded-full mb-6">
+<i class="fa-solid fa-code text-2xl text-neonCyan"></i>
+</div>
+<h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">Web Frontend</h4>
+<p class="text-xs text-gray-500 leading-relaxed">Responsive architectures web templates tailored with optimized performance loops.</p>
+</div>
+<div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonPurple/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+<div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonPurple/5 border border-neonPurple/20 rounded-full mb-6">
+<i class="fa-solid fa-mobile-screen-button text-2xl text-neonPurple"></i>
+</div>
+<h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">Flutter UI/UX</h4>
+<p class="text-xs text-gray-500 leading-relaxed">Elite custom widgets and interactive components for modern mobile applications.</p>
+</div>
+<div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonCyan/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+<div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonCyan/5 border border-neonCyan/20 rounded-full mb-6">
+<i class="fa-solid fa-bezier-curve text-2xl text-neonCyan"></i>
+</div>
+<h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">UI Mockups</h4>
+<p class="text-xs text-gray-500 leading-relaxed">Figma prototyping, high-end vector branding, and luxury interface concepts.</p>
+</div>
+<div class="glass-panel p-8 rounded-sm text-center border border-white/5 hover:border-neonPink/30 transition-all duration-300" data-aos="zoom-in" data-aos-delay="400">
+<div class="w-14 h-14 mx-auto flex items-center justify-center bg-neonPink/5 border border-neonPink/20 rounded-full mb-6">
+<i class="fa-solid fa-database text-2xl text-neonPink"></i>
+</div>
+<h4 class="font-bold text-white tracking-widest uppercase text-sm mb-2">Relational Logic</h4>
+<p class="text-xs text-gray-500 leading-relaxed">SQL structural setup for handling systematic data storage on client side.</p>
+</div>
+</div>
+</section>
 
-    <div id="imageModal" class="fixed inset-0 z-50 bg-cyberDark/95 hidden backdrop-blur-xl flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
-        <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-neonCyan text-3xl transition-colors focus:outline-none z-50">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="max-w-5xl w-full flex flex-col items-center relative">
-            <div class="absolute -inset-1 bg-gradient-to-r from-neonCyan to-neonPink rounded-sm blur opacity-40"></div>
-            <div class="relative border border-cyan-500/30 rounded-sm overflow-hidden bg-black shadow-neonGlow max-h-[85vh] w-full">
-                <img id="modalImg" src="" alt="Enlarged Visual" class="w-full h-auto max-h-[75vh] object-contain block mx-auto">
-                <div class="p-4 bg-cyberMatrix border-t border-white/10 flex justify-between items-center">
-                    <h4 id="modalTitle" class="text-xs font-mono tracking-widest uppercase text-neonCyan">Terminal View</h4>
-                    <span class="text-[9px] font-mono text-gray-500">ESC TO CLOSE</span>
-                </div>
-            </div>
-        </div>
-    </div>
+<section id="contact" class="py-24 relative z-10 max-w-4xl mx-auto px-6 border-t border-cyan-500/10">
+<div class="text-center mb-12" data-aos="fade-up">
+<p class="text-neonPink font-mono text-xs uppercase tracking-widest mb-2">// SECURE_COMMS_LINK</p>
+<h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Get In Touch</h2>
+<p class="text-gray-400 text-xs mt-2 font-mono">Bina kisi backend ke, direct connection establish karein.</p>
+</div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script>
-          Yahan aap apne real project links 'projectUrl' field me paste kar sakte hain!
-        const myProjects = [
-            {
-                id: "01",
-                title: "Inkly E-Commerce Website for Editable Digital Templates",
-                desc: "Inkly is a premium, fully functional e-commerce web application designed for selling editable digital invitation templates (Weddings, Birthdays, Nikkah Ceremonies) and professional CVs. The platform features a sleek, modern UI with dynamic content delivery, tailored to provide a seamless user experience from browsing to purchasing.",
-                category: "development",
-                image: "images/inlkly.png",
-                projectUrl: "https://inkly.kesug.com/",   
-                tags: ["UI Systems", "CSS Matrix"]
-            },
-             {
-                id: "02",
-                title: "SmartFix — Premium Mobile Repair UI Design",
-                desc: "This is a premium, cutting-edge user interface designed specifically for high-end mobile repair services. Built on a sophisticated dark-mode aesthetic, the design seamlessly integrates advanced glassmorphism components, structured horizontal service grids, and real-time category filtering tabs (All Repairs, Screen, Battery, Hardware). The layout is engineered to maximize visual engagement for users through micro-interactions, bold typography, and rich macro-repair photography, offering a high-performance, conversion-optimized web experience.",
-                category: "development",
-                image: "images/Mobile Repair Website.png", 
-                projectUrl: "https://techfix-mobile-repair.vercel.app/",  
-                tags: ["HTML5", "Tailwind CSS", "JS Engine"]
-            },
-            {
-                id: "03",
-                title: "Premium Real Estate & Luxury Property Investments",
-                desc: "Discover your dream home with PrimeNest. We offer premium brokerage, exclusive off-market listings, and luxury property investments across top locations in the UK and US",
-                category: "development",
-                image: "images/realestate.png", 
-                projectUrl: "https://prime-next-gamma.vercel.app/",   
-                tags: ["HTML5", "Tailwind CSS", "JS Engine"]
-            },
-            {
-                id: "04",
-                title: "Luxury AI Interior Visualization Platform UI/UX",
-                desc: "Designed and developed a modern luxury style UI for an AI powered interior visualization platform. The project focuses on real time space visualization with a premium dark theme interface gold accents and responsive layouts for desktop and tablet screens.",
-                category: "development",
-                image: "images/daw2.png", 
-                projectUrl: "https://spazioai.page.gd/",   
-                tags: ["HTML5", " CSS", "JS"]
-            },
-            {
-                id: "05",
-                title: "Flutter UI Framework",
-                desc: "Elite widget schemas and modern smooth client-side interaction workflows for premium feel.",
-                category: "design",
-                image: "images/case-2.png",
-                projectUrl: "",
-                tags: ["Flutter UI", "Component Forge"]
-            },
-            {
-                id: "06",
-                title: "Modern Client Shell",
-                desc: "Interactive sleek responsive structure engineered completely for custom visual components.",
-                category: "development",
-                image: "images/case-3.png",
-                projectUrl: "",
-                tags: ["Responsive Web", "Interactions"]
-            },
-            {
-                id: "07",
-                title: "Premium Vector Architecture",
-                desc: "Custom layouts, typography scales, and structural interface designs for creative business displays.",
-                category: "design",
-                image: "images/case-4.png",
-                projectUrl: "",
-                tags: ["Figma Mockup", "Vector Art"]
-            },
-            {
-                id: "08",
-                title: "E-Commerce Frontend Interface",
-                desc: "Optimized multi-page look scaled within a fast, lightweight single web bundle layout.",
-                category: "development",
-                image: "images/case-5.png",
-                projectUrl: "",
-                tags: ["UI Systems", "CSS Matrix"]
-            },
-            {
-                id: "09",
-                title: "Next-Gen Frontend Platform",
-                desc: "High-performance web templates rendered completely with clean layouts and semantic markup.",
-                category: "development",
-                image: "images/case-1.jpg", 
-                projectUrl: "",
-                tags: ["HTML5", "Tailwind CSS", "JS Engine"]
-            }
-        ];
+<div class="glass-panel p-8 rounded-sm border border-cyan-500/20 shadow-purpleGlow" data-aos="fade-up" data-aos-delay="200">
+<form action="https://formspree.io/maqkbrez" method="POST" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col space-y-2">
+<label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Sender Name_</label>
+<input type="text" name="name" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="e.g. John Doe">
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Secure Email_</label>
+<input type="email" name="email" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="name@domain.com">
+</div>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="text-[10px] font-mono tracking-widest uppercase text-neonCyan">Transmission Payload (Message)_</label>
+<textarea name="message" rows="5" required class="bg-cyberDark/60 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-neonCyan text-white transition-colors" placeholder="Type Your Message Here..."></textarea>
+</div>
+<div class="text-right">
+<button type="submit" class="px-8 py-3 bg-gradient-to-r from-neonCyan to-neonPurple text-black font-bold uppercase text-xs tracking-wider rounded-sm hover:scale-105 transition-all duration-300 shadow-neonGlow">
+Execute Transmission <i class="fa-solid fa-paper-plane ml-2"></i>
+</button>
+</div>
+</form>
+</div>
+</section>
 
-        function renderPortfolio() {
-            const grid = document.getElementById('projectsGrid');
-            grid.innerHTML = ""; 
+<footer class="bg-black/80 py-12 relative z-10 border-t border-white/5" data-aos="fade-up">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div>
+<p class="text-xs font-mono text-gray-500">&copy; 2026 AHAD_ALI. CREATIVE MATRIX NODE.</p>
+</div>
+<div class="flex space-x-6 text-lg">
+<a href="#" class="text-gray-500 hover:text-neonCyan transition-all"><i class="fa-brands fa-github"></i></a>
+<a href="#" class="text-gray-500 hover:text-neonCyan transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="#" class="text-gray-500 hover:text-neonPink transition-all"><i class="fa-brands fa-behance"></i></a>
+</div>
+</div>
+</footer>
 
-            myProjects.forEach((proj, index) => {
-                const delay = (index % 3) * 100 + 100; 
-                const tagBadges = proj.tags.map(t => `<span class="text-[10px] font-mono ${proj.category === 'development' ? 'text-neonCyan bg-neonCyan/5 border-neonCyan/10' : 'text-neonPurple bg-neonPurple/5 border-neonPurple/10'} px-2.5 py-1 border rounded-sm">${t}</span>`).join('');
-                const glowBorder = proj.category === 'development' ? 'hover:border-neonCyan/40' : 'hover:border-neonPurple/40';
-                const nodeColor = proj.category === 'development' ? 'border-neonCyan/40 text-neonCyan' : 'border-neonPurple/40 text-neonPurple';
-                
-                  Add Live Node Button dynamically if URL exists
-                const linkButton = proj.projectUrl//? `
-                    <div class="pt-2">
-                        <a href="${proj.projectUrl}" target="_blank" class="inline-flex items-center text-[11px] font-mono tracking-wider text-neonCyan hover:text-white transition-colors">
-                            LAUNCH_NODE <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[9px]"></i>
-                        </a>
-                    </div>
-                `//: '';
+<div id="imageModal" class="fixed inset-0 z-50 bg-cyberDark/95 hidden backdrop-blur-xl flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+<button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-neonCyan text-3xl transition-colors focus:outline-none z-50">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="max-w-5xl w-full flex flex-col items-center relative">
+<div class="absolute -inset-1 bg-gradient-to-r from-neonCyan to-neonPink rounded-sm blur opacity-40"></div>
+<div class="relative border border-cyan-500/30 rounded-sm overflow-hidden bg-black shadow-neonGlow max-h-[85vh] w-full">
+<img id="modalImg" src="" alt="Enlarged Visual" class="w-full h-auto max-h-[75vh] object-contain block mx-auto">
+<div class="p-4 bg-cyberMatrix border-t border-white/10 flex justify-between items-center">
+<h4 id="modalTitle" class="text-xs font-mono tracking-widest uppercase text-neonCyan">Terminal View</h4>
+<span class="text-[9px] font-mono text-gray-500">ESC TO CLOSE</span>
+</div>
+</div>
+</div>
+</div>
 
-                const cardHTML = `
-                    <div class="project-card glass-panel group rounded-sm overflow-hidden border border-white/5 ${glowBorder} shadow-purpleGlow transition-all duration-500" data-category="${proj.category}" data-aos="fade-up" data-aos-delay="${delay}">
-                        <div class="relative overflow-hidden aspect-[16/10] bg-cyberMatrix cursor-pointer" onclick="openModal('${proj.image}', '${proj.title}')">
-                            <img src="${proj.image}" alt="${proj.title}" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent"></div>
-                            <span class="absolute top-4 right-4 bg-black/80 border ${nodeColor} font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 rounded-sm">NODE   ${proj.id}</span>
-                        </div>
-                        <div class="p-6 space-y-4">
-                            <h3 class="text-xl font-bold tracking-wider text-white group-hover:text-neonCyan transition-colors">${proj.title}</h3>
-                            <p class="text-xs text-gray-400 leading-relaxed font-light">${proj.desc}</p>
-                            <div class="flex flex-wrap gap-2 pt-2">${tagBadges}</div>
-                            ${linkButton}
-                        </div>
-                    </div>
-                `;
-                grid.innerHTML += cardHTML;
-            });
-        }
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        renderPortfolio();
+<script>
+// --- 1. FUTURE PORTFOLIO DATA HUB ---
+// Yahan aap apne real project links 'projectUrl' field me paste kar sakte hain!
+const myProjects = [
+{
+id: "01",
+title: "Inkly E-Commerce Website for Editable Digital Templates",
+desc: "Inkly is a premium, fully functional e-commerce web application designed for selling editable digital invitation templates (Weddings, Birthdays, Nikkah Ceremonies) and professional CVs. The platform features a sleek, modern UI with dynamic content delivery, tailored to provide a seamless user experience from browsing to purchasing.",
+category: "development",
+image: "images/inlkly.png",
+projectUrl: "https://inkly.kesug.com/", // <--- APNA LINK PASTE KAREIN
+tags: ["UI Systems", "CSS Matrix"]
+},
+{
+id: "02",
+title: "SmartFix — Premium Mobile Repair UI Design",
+desc: "This is a premium, cutting-edge user interface designed specifically for high-end mobile repair services. Built on a sophisticated dark-mode aesthetic, the design seamlessly integrates advanced glassmorphism components, structured horizontal service grids, and real-time category filtering tabs (All Repairs, Screen, Battery, Hardware). The layout is engineered to maximize visual engagement for users through micro-interactions, bold typography, and rich macro-repair photography, offering a high-performance, conversion-optimized web experience.",
+category: "development",
+image: "images/Mobile Repair Website.png", 
+projectUrl: "https://techfix-mobile-repair.vercel.app/", // <--- APNA LINK PASTE KAREIN
+tags: ["HTML5", "Tailwind CSS", "JS Engine"]
+},
+{
+id: "03",
+title: "Premium Real Estate & Luxury Property Investments",
+desc: "Discover your dream home with PrimeNest. We offer premium brokerage, exclusive off-market listings, and luxury property investments across top locations in the UK and US",
+category: "development",
+image: "images/realestate.png", 
+projectUrl: "https://prime-next-gamma.vercel.app/", // <--- APNA LINK PASTE KAREIN
+tags: ["HTML5", "Tailwind CSS", "JS Engine"]
+},
+{
+id: "04",
+title: "Luxury AI Interior Visualization Platform UI/UX",
+desc: "Designed and developed a modern luxury style UI for an AI powered interior visualization platform. The project focuses on real time space visualization with a premium dark theme interface gold accents and responsive layouts for desktop and tablet screens.",
+category: "development",
+image: "images/daw2.png", 
+projectUrl: "https://spazioai.page.gd/", // <--- APNA LINK PASTE KAREIN
+tags: ["HTML5", " CSS", "JS"]
+},
+{
+id: "05",
+title: "Flutter UI Framework",
+desc: "Elite widget schemas and modern smooth client-side interaction workflows for premium feel.",
+category: "design",
+image: "images/case-2.png",
+projectUrl: "",
+tags: ["Flutter UI", "Component Forge"]
+},
+{
+id: "06",
+title: "Modern Client Shell",
+desc: "Interactive sleek responsive structure engineered completely for custom visual components.",
+category: "development",
+image: "images/case-3.png",
+projectUrl: "",
+tags: ["Responsive Web", "Interactions"]
+},
+{
+id: "07",
+title: "Premium Vector Architecture",
+desc: "Custom layouts, typography scales, and structural interface designs for creative business displays.",
+category: "design",
+image: "images/case-4.png",
+projectUrl: "",
+tags: ["Figma Mockup", "Vector Art"]
+},
+{
+id: "08",
+title: "E-Commerce Frontend Interface",
+desc: "Optimized multi-page look scaled within a fast, lightweight single web bundle layout.",
+category: "development",
+image: "images/case-5.png",
+projectUrl: "",
+tags: ["UI Systems", "CSS Matrix"]
+},
+{
+id: "09",
+title: "Next-Gen Frontend Platform",
+desc: "High-performance web templates rendered completely with clean layouts and semantic markup.",
+category: "development",
+image: "images/case-1.jpg", 
+projectUrl: "",
+tags: ["HTML5", "Tailwind CSS", "JS Engine"]
+}
+];
 
-        AOS.init({
-            duration: 900,
-            once: true,
-            easing: 'ease-in-out-cubic',
-        });
+// --- 2. DYNAMIC CARD RENDER ENGINE ---
+function renderPortfolio() {
+const grid = document.getElementById('projectsGrid');
+grid.innerHTML = ""; 
 
-        function filterProjects(category) {
-            const cards = document.querySelectorAll('.project-card');
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                    setTimeout(() => card.style.opacity = '1', 50);
-                } else {
-                    card.style.opacity = '0';
-                    setTimeout(() => card.style.display = 'none', 300);
-                }
-            });
+myProjects.forEach((proj, index) => {
+const delay = (index % 3) * 100 + 100; 
+const tagBadges = proj.tags.map(t => `<span class="text-[10px] font-mono ${proj.category === 'development' ? 'text-neonCyan bg-neonCyan/5 border-neonCyan/10' : 'text-neonPurple bg-neonPurple/5 border-neonPurple/10'} px-2.5 py-1 border rounded-sm">${t}</span>`).join('');
+const glowBorder = proj.category === 'development' ? 'hover:border-neonCyan/40' : 'hover:border-neonPurple/40';
+const nodeColor = proj.category === 'development' ? 'border-neonCyan/40 text-neonCyan' : 'border-neonPurple/40 text-neonPurple';
 
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-neonCyan', 'text-black');
-                btn.classList.add('text-gray-400', 'hover:text-neonCyan');
-            });
-            event.currentTarget.classList.add('bg-neonCyan', 'text-black');
-            event.currentTarget.classList.remove('text-gray-400', 'hover:text-neonCyan');
-        }
+// Add Live Node Button dynamically if URL exists
+const linkButton = proj.projectUrl ? `
+                   <div class="pt-2">
+                       <a href="${proj.projectUrl}" target="_blank" class="inline-flex items-center text-[11px] font-mono tracking-wider text-neonCyan hover:text-white transition-colors">
+                           LAUNCH_NODE <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[9px]"></i>
+                       </a>
+                   </div>
+               ` : '';
 
-        function openModal(imgSrc, title) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImg');
-            const modalTitle = document.getElementById('modalTitle');
+const cardHTML = `
+                   <div class="project-card glass-panel group rounded-sm overflow-hidden border border-white/5 ${glowBorder} shadow-purpleGlow transition-all duration-500" data-category="${proj.category}" data-aos="fade-up" data-aos-delay="${delay}">
+                       <div class="relative overflow-hidden aspect-[16/10] bg-cyberMatrix cursor-pointer" onclick="openModal('${proj.image}', '${proj.title}')">
+                           <img src="${proj.image}" alt="${proj.title}" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
+                           <div class="absolute inset-0 bg-gradient-to-t from-cyberDark via-transparent to-transparent"></div>
+                           <span class="absolute top-4 right-4 bg-black/80 border ${nodeColor} font-mono text-[9px] uppercase tracking-widest px-2.5 py-1 rounded-sm">NODE // ${proj.id}</span>
+                       </div>
+                       <div class="p-6 space-y-4">
+                           <h3 class="text-xl font-bold tracking-wider text-white group-hover:text-neonCyan transition-colors">${proj.title}</h3>
+                           <p class="text-xs text-gray-400 leading-relaxed font-light">${proj.desc}</p>
+                           <div class="flex flex-wrap gap-2 pt-2">${tagBadges}</div>
+                           ${linkButton}
+                       </div>
+                   </div>
+               `;
+grid.innerHTML += cardHTML;
+});
+}
 
-            modalImg.src = imgSrc;
-            modalTitle.innerText = "VIEWING NODE   " + title.toUpperCase();
+renderPortfolio();
 
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modal.classList.add('opacity-100');
-            }, 10);
-        }
+AOS.init({
+duration: 900,
+once: true,
+easing: 'ease-in-out-cubic',
+});
 
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.remove('opacity-100');
-            modal.classList.add('opacity-0');
-            setTimeout(() => {
-                modal.classList.remove('flex');
-                modal.classList.add('hidden');
-            }, 300);
-        }
+function filterProjects(category) {
+const cards = document.querySelectorAll('.project-card');
+cards.forEach(card => {
+if (category === 'all' || card.getAttribute('data-category') === category) {
+card.style.display = 'block';
+setTimeout(() => card.style.opacity = '1', 50);
+} else {
+card.style.opacity = '0';
+setTimeout(() => card.style.display = 'none', 300);
+}
+});
 
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
-        });
-    </script>
+const buttons = document.querySelectorAll('.filter-btn');
+buttons.forEach(btn => {
+btn.classList.remove('bg-neonCyan', 'text-black');
+btn.classList.add('text-gray-400', 'hover:text-neonCyan');
+});
+event.currentTarget.classList.add('bg-neonCyan', 'text-black');
+event.currentTarget.classList.remove('text-gray-400', 'hover:text-neonCyan');
+}
+
+function openModal(imgSrc, title) {
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImg');
+const modalTitle = document.getElementById('modalTitle');
+
+modalImg.src = imgSrc;
+modalTitle.innerText = "VIEWING NODE // " + title.toUpperCase();
+
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+setTimeout(() => {
+modal.classList.remove('opacity-0');
+modal.classList.add('opacity-100');
+}, 10);
+}
+
+function closeModal() {
+const modal = document.getElementById('imageModal');
+modal.classList.remove('opacity-100');
+modal.classList.add('opacity-0');
+setTimeout(() => {
+modal.classList.remove('flex');
+modal.classList.add('hidden');
+}, 300);
+}
+
+document.addEventListener('keydown', function(e) {
+if (e.key === 'Escape') closeModal();
+});
+</script>
 </body>
 </html>
